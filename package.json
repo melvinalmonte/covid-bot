@@ -1,5 +1,8 @@
 {
   "name": "covid-bot",
+  "engines": {
+    "node": "13.10.1"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
