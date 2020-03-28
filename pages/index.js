@@ -7,7 +7,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className="column has-text-centered">
+    <main className="column has-text-centered is-mobile">
       <section className="hero is-info custom-header">
         <div className="hero-body">
           <div className="container">
@@ -27,7 +27,7 @@ const Home = () => (
       </div>
     </main>
 
-    <footer className="column has-text-centered custom-footer">
+    <footer className="column has-text-centered custom-footer is-mobile">
       <p>
         Built with data from <strong>mathdroid </strong>{" "}
         <a href="https://github.com/mathdroid/covid-19-api" target="_blank">
