@@ -1,17 +1,17 @@
 import Head from "next/head";
 
 const Home = () => (
-  <div style={{ height: "100vh" }}>
+  <div className="app">
     <Head>
       <title>CoviBOT</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main className="column has-text-centered">
-      <section class="hero is-info" style={{marginBottom: "6rem"}}>
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">Talk to CoviBOT! </h1>
+      <section className="hero is-info custom-header">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">Talk to CoviBOT! </h1>
           </div>
         </div>
       </section>
@@ -27,7 +27,7 @@ const Home = () => (
       </div>
     </main>
 
-    <footer className="column has-text-centered" style={{marginTop: "6rem"}}>
+    <footer className="column has-text-centered custom-footer">
       <p>
         Built with data from <strong>mathdroid </strong>{" "}
         <a href="https://github.com/mathdroid/covid-19-api" target="_blank">
