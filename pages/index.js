@@ -15,7 +15,7 @@ const Home = () => (
           </div>
         </div>
       </section>
-      <div className="column has-text-centered">
+      <div className="columns is-centered is-mobile">
         <iframe
           width="500"
           height="500"
