@@ -1,6 +1,11 @@
+html{
+    overflow: hidden !important;
+}
+
 .app {
   height: 100vh;
 }
+
 .custom-header {
   margin-bottom: 5rem;
 }
@@ -16,7 +21,7 @@ section.custom-header h1 {
 }
 
 iframe {
-    border: 1px solid #2b313f !important;
+  border: 1px solid #2b313f !important;
 }
 
 .custom-footer {
