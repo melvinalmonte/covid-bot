@@ -5,6 +5,20 @@
   margin-bottom: 5rem;
 }
 
+section.custom-header {
+  background: #2b313f;
+}
+
+section.custom-header h1 {
+  color: #ffffff;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+iframe {
+    border: 1px solid #2b313f !important;
+}
+
 .custom-footer {
   margin-top: 5rem;
 }

@@ -7,16 +7,16 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className="column has-text-centered is-mobile">
-      <section className="hero is-info custom-header">
+    <main className="column has-text-centered">
+      <section className="hero custom-header">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">Talk to CoviBOT! </h1>
           </div>
         </div>
       </section>
-      <div className="column is-offset-4 is-4 is-mobile">
-        <div className="box">
+      <div>
+        <div>
           <iframe
             width="500"
             height="500"
