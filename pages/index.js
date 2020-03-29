@@ -7,26 +7,23 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className="column has-text-centered">
-      <section className="hero custom-header">
+    <main>
+      <section className="hero custom-header has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">Talk to CoviBOT! </h1>
           </div>
         </div>
       </section>
-      <div>
-        <div>
-          <iframe
-            width="500"
-            height="500"
-            allow="microphone;"
-            src="https://console.dialogflow.com/api-client/demo/embedded/3787d70f-39b6-4424-a333-b2bdee4f0da0"
-          ></iframe>
-        </div>
+      <div className="column has-text-centered">
+        <iframe
+          width="500"
+          height="500"
+          allow="microphone;"
+          src="https://console.dialogflow.com/api-client/demo/embedded/3787d70f-39b6-4424-a333-b2bdee4f0da0"
+        />
       </div>
     </main>
-
     <footer className="column has-text-centered custom-footer is-mobile">
       <p>
         Built with data from <strong>mathdroid </strong>{" "}
