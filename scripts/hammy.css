@@ -1,0 +1,82 @@
+
+// General
+// ---------------------------------
+
+   html, body {
+       height: 100%;
+   }
+.loader {
+&_wrapper {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+&_img {
+     width: 200px;
+ }
+}
+
+// Animations
+// ---------------------------------
+   .progressGroup {
+       animation: 30s linear 1s infinite ProgressOpacity;
+       opacity: 0.25;
+   }
+.progress {
+    animation: 1.5s ease-in-out infinite alternate Pulse;
+}
+.progress1 {
+    animation: 30s linear 1s infinite Progress1;
+    stroke-dasharray: 0 1000;
+}
+.progress2 {
+    animation: 30s linear 1s infinite Progress2;
+    stroke-dasharray: 0 0 1 1000;
+    display: none;
+}
+
+@keyframes ProgressOpacity {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes Progress1 {
+    to {  stroke-dasharray: 280 1000; }
+}
+@keyframes Progress2 {
+    to {  stroke-dasharray: 0 280 1 1000; }
+}
+@keyframes Pulse {
+    to { stroke: #ff6600; }
+}
+
+// ---------------
+   #wheel {
+       animation: 1.5s linear infinite Spin;
+       transform: rotate(0deg);
+       transform-origin: 50px 50px;
+   }
+@keyframes Spin {
+    to { transform: rotate(360deg); }
+}
+
+// ---------------
+   #whisky {
+       animation: 1.5s ease-in-out infinite alternate Rock;
+       transform: rotate(20deg) translate(18px,49px);
+       transform-origin: 50px 50px;
+   }
+@keyframes Rock {
+    to { transform: rotate(-20deg) translate(18px,49px); }
+}
+
+// --------------
+   .legs {
+       transform-origin: 40px -40px;
+       transform: translatex(1px) rotate(2deg);
+       animation: 0.25s ease-in-out infinite alternate Wiggle;
+   }
+@keyframes Wiggle {
+    50% { transform: translatex(-1px) rotate(-2deg); }
+}
